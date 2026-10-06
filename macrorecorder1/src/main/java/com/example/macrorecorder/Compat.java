@@ -36,8 +36,8 @@ final class Compat {
         if (mc.level == null) return;
         boolean local = mc.isLocalServer();
         mc.level.disconnect(ClientLevel.DEFAULT_QUIT_MESSAGE);
-        if (local) mc.disconnect(new GenericMessageScreen(Component.translatable("menu.savingLevel")));
-        else mc.disconnect(new TitleScreen());
+               if (local) mc.disconnect(new GenericMessageScreen(Component.translatable("menu.savingLevel")), false);
+        else mc.disconnect(new TitleScreen(), false);
     }
 
     static int getSlot(Minecraft mc) { return mc.player.getInventory().getSelectedSlot(); }
