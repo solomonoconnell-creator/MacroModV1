@@ -36,7 +36,7 @@ public class MacroScreen extends Screen {
         int right = this.width / 2 + gap / 2;
         int top = Math.max(36, this.height / 2 - 80);
 
-        addRenderableWidget(new StringWidget(this.width / 2 - 100, top - 24, 200, 12, this.title, this.font).alignCenter());
+        addRenderableWidget(new StringWidget(this.width / 2 - 100, top - 24, 200, 12, this.title, this.font));
         addRenderableWidget(new StringWidget(left, top - 12, colW, 10, Component.literal("Playback"), this.font));
         addRenderableWidget(new StringWidget(right, top - 12, colW, 10, Component.literal("Safety rule"), this.font));
 
